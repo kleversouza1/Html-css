@@ -24,7 +24,7 @@ function jump() {
         setTimeout(function() {
             dino.classList.remove("jump"); 
             isJumping = false; // Define que o Dino não está mais pulando
-        }, 600); // Sincroniza com a duração da animação do pulo
+        },600); // Sincroniza com a duração da animação do pulo
     }
 }
 
