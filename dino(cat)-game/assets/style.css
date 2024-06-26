@@ -24,7 +24,7 @@ body {
     bottom: 0;
     width: 50px;
     height: 50px; 
-    background: url(img/8626172.png); 
+    background: url(img/gato.png); 
     background-size: cover; 
     background-position: center center; /* Centraliza a imagem */
 }
@@ -36,7 +36,7 @@ body {
     right: 0; 
     width: 25px;
     height: 50px; 
-    background: url(img/pngegg.png); 
+    background: url(img/caramelo.png); 
     background-size: cover; /* Cobre todo o elemento */
     background-position: center center; 
     animation: moveCactus 2s linear infinite; /* Animação contínua para mover o cacto */
