@@ -1,0 +1,80 @@
+/* Estilo do corpo da página */
+body {
+    display: flex; /* Usa flexbox para alinhar o conteúdo */
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    background-color: #f7f7f7; 
+    margin: 0; 
+    overflow: hidden; /* Esconde qualquer conteúdo */
+}
+
+/* Container do jogo */
+.game-container {
+    position: relative; /* Permite posicionamento absoluto dos filhos */
+    width: 800px; 
+    height: 200px; 
+    border: 1px solid #000; 
+    background-color: #fff; 
+}
+
+/* Estilo do Dino */
+.dino {
+    position: absolute; 
+    bottom: 0;
+    width: 50px;
+    height: 50px; 
+    background: url(img/8626172.png); 
+    background-size: cover; 
+    background-position: center center; /* Centraliza a imagem */
+}
+
+/* Estilo do cacto */
+.cactus {
+    position: absolute; /* Posicionamento absoluto dentro do container */
+    bottom: 0;
+    right: 0; 
+    width: 25px;
+    height: 50px; 
+    background: url(img/pngegg.png); 
+    background-size: cover; /* Cobre todo o elemento */
+    background-position: center center; 
+    animation: moveCactus 2s linear infinite; /* Animação contínua para mover o cacto */
+}
+
+/* Animação para mover o cacto */
+@keyframes moveCactus {
+    from {
+        right: 0; /* Inicia à direita do container */
+    }
+    to {
+        right: 100%; /* Move até fora da tela à esquerda */
+    }
+}
+
+/* Classe para animação de pulo */
+.jump {
+    animation: jump 0.6s; /* Define a animação de pulo com duração de 0.6s */
+}
+
+/* Animação de pulo */
+@keyframes jump {
+    0% {
+        bottom: 0; /* Início do pulo no chão */
+    }
+    50% {
+        bottom: 150px; /* Ponto mais alto do pulo */
+    }
+    100% {
+        bottom: 0; /* Fim do pulo no chão */
+    }
+}
+
+/* Estilo do placar de pontuação */
+.score {
+    position: absolute; 
+    top: 10px;
+    right: 10px;
+    font-size: 20px; 
+    font-family: Arial, sans-serif; 
+}
