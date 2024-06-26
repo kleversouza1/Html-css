@@ -8,6 +8,9 @@ let isJumping = false; // Flag para verificar se o Dino está pulando
 document.addEventListener("keydown", function(event) {
     jump(); // Chama a função de pulo ao pressionar qualquer tecla
 });
+document.addEventListener("touchstart", function(event) {
+    jump(); // Chama a função de pulo ao tocar na tela
+});
 
 // Função para fazer o Dino pular
 function jump() {
