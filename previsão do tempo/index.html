@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>previsão</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <main>
+        <section>
+            <div id="container">
+                <form id="search">  
+                        <span class="material-symbols-outlined">home_pin</span>
+                    <input type="search" name="name" id="iname" placeholder="Digite sua cidade">
+                    <button type="submit">
+                        <span class="material-symbols-outlined">search</span>
+                    </button>
+                </form>
+                <div id="weather" class="show">
+                    <h1 id="title">Aracaju, BR</h1>
+                    <div id="infos">
+                        <div id="temp">
+                            <img src="https://openweathermap.org/img/wn/10n@2x.png" alt="" id="temp_img">
+                            <div>
+                                <p id="temp_value">
+                                    
+                                </p>
+                                <p id="tep_description">
+                                    Nublado
+                                </p>
+                            </div>
+                        </div>
+                        <div id="other_infos">
+                            <div class="info">
+                                <span id="temp_max_icon" class="material-symbols-outlined">
+                                    device_thermostat
+                                    </span>
+                                <div>
+                                    <h2>Temp. max</h2>
+                                   <p id="temp_max">22 </p> 
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span id="temp_min_icon" class="material-symbols-outlined">
+                                    <span class="material-symbols-outlined">
+                                        thermometer_loss
+                                        </span>
+                                    </span>
+                                <div>
+                                    <h2>Temp. min</h2>
+                                   <p id="temp_min"><sup>100C°</sup> </p> 
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span id="humidade_icon" class="material-symbols-outlined">
+                                    <span class="material-symbols-outlined">
+                                        humidity_percentage
+                                        </span>
+                                    </span>
+                                <div>
+                                    <h2>Humidade</h2>
+                                   <p id="humidade">10% </p> 
+                                </div>
+                            </div>
+                            <div class="info">
+                                <span id="wind_icon" class="material-symbols-outlined">
+                                    <span class="material-symbols-outlined">
+                                        air
+                                        </span>
+                                    </span>
+                                <div>
+                                    <h2>Ventos</h2>
+                                   <p id="wind">10 km h </p> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div id="alert"></div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/scripts/script.js"></script>
+</body>
+</html>
