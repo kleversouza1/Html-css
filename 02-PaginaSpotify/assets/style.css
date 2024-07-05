@@ -1,0 +1,77 @@
+/* Reset de margens e paddings para o corpo da página */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo básico para o cabeçalho */
+header {
+    background-color: #1DB954;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px; /* Limita o tamanho máximo do logo */
+}
+
+/* Estilo básico para o conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Estilo para o container principal */
+.container {
+    display: flex;
+    justify-content: space-between; /* Coloca os elementos lado a lado */
+    align-items: center; /* Alinha os elementos verticalmente ao centro */
+}
+
+/* Estilo para o texto e botões */
+#texto1 {
+    max-width: 50%; /* Limita a largura do texto para que não ocupe toda a largura disponível */
+}
+
+#texto1 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+#texto1 p {
+    margin-bottom: 20px;
+}
+
+#texto1 button {
+    background-color: #1DB954;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#texto1 button:hover {
+    background-color: #0e8d43;
+}
+
+/* Estilo para a imagem */
+#imagem1 img {
+    max-width: 100%; /* Ajusta a largura da imagem para que seja responsiva */
+}
+@media screen and (max-width: 768px) {
+    .container {
+
+        flex-direction: column; /* Altera para layout de coluna em telas menores */
+        align-items: center; /* Centraliza os iens horizontalmente */
+    }
+
+    #texto1 {
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Utilizando a imagem por URL */
+    #imagem1 {
+        order: -1; /* Coloca a imagem acima do texto */
+
+    }
+}
